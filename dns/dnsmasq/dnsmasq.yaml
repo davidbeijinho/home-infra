@@ -26,6 +26,8 @@ domain=${BASE_DOMAIN}
 #local=/${BASE_DOMAIN}/
 #log all dns queries
 log-queries 
+# Set the facility to which dnsmasq will send syslog entries
+log-facility=/var/lib/misc/logs/dnsmasq.log
 ########################################
 # DHCP CONFIG
 ########################################
