@@ -1,12 +1,8 @@
 # My Home infrastructure
 
-try to use:
+Playground for:
 
-Kubernetes
-Argo CD
+- Kubernetes
+- Argo CD
+- dnsmasq
 
-
-## dnsmasq
-
-### Man page
-https://www.linux.org/docs/man8/dnsmasq.html
