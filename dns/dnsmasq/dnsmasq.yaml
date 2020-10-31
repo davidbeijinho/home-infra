@@ -23,9 +23,9 @@ server=/${HOST}/${SERVER_IP}
 # Specify an IP address to return for any host in the given domains. /<domain>[/<domain>...]/[<ipaddr>]
 #address=/${BASE_DOMAIN}/${SERVER_IP}
 # Specifies DNS domains for the DHCP server. Domains may be be given unconditionally
-domain=${BASE_DOMAIN}
+#domain=${BASE_DOMAIN}
 # Specify IP address of upstream servers directly. 
-local=/${BASE_DOMAIN}/
+#local=/${BASE_DOMAIN}/
 #log all dns queries
 log-queries 
 # Set the facility to which dnsmasq will send syslog entries
