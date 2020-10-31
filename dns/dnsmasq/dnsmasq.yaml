@@ -19,9 +19,11 @@ cache-size=10000
 server=1.1.1.1
 server=1.0.0.1
 # Add current server to servers list
-#server=/${HOST}/${SERVER_IP}
+#server=${SERVER_IP}
 # Specify an IP address to return for any host in the given domains. /<domain>[/<domain>...]/[<ipaddr>]
 address=/services.${BASE_DOMAIN}/${SERVER_IP}
+# to be abble to access the host
+address=/${HOST}/${SERVER_IP}
 # Specifies DNS domains for the DHCP server. Domains may be be given unconditionally
 domain=${BASE_DOMAIN}
 # Specify IP address of upstream servers directly. 
