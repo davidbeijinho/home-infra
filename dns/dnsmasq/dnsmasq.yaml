@@ -16,8 +16,8 @@ cache-size=10000
 # Use cloudflare as default DNS nameservers
 server=1.1.1.1
 server=1.0.0.1
-#serve all .domain queries using a specific nameserver
-#server=/${BASE_DOMAIN}/${SERVER_IP}
+# Add server to servers list
+server=/${BASE_DOMAIN}/${SERVER_IP}
 # Specify an IP address to return for any host in the given domains. /<domain>[/<domain>...]/[<ipaddr>]
 address=/${BASE_DOMAIN}/${SERVER_IP}
 # Specifies DNS domains for the DHCP server. Domains may be be given unconditionally
