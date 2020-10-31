@@ -9,6 +9,8 @@ domain-needed
 bogus-priv
 # This limits your name services exclusively to Dnsmasq, and it will not use /etc/resolv.conf or any other system name service files:
 no-resolv
+# Add the domain to simple names (without a period)
+expand-hosts
 # Restrict which network interfaces Dnsmasq listens to:
 interface=eth0
 # Adjust the size of the cached domain names. The default is 150.
@@ -19,7 +21,7 @@ server=1.0.0.1
 # Add current server to servers list
 server=/${HOST}/${SERVER_IP}
 # Specify an IP address to return for any host in the given domains. /<domain>[/<domain>...]/[<ipaddr>]
-address=/${BASE_DOMAIN}/${SERVER_IP}
+#address=/${BASE_DOMAIN}/${SERVER_IP}
 # Specifies DNS domains for the DHCP server. Domains may be be given unconditionally
 domain=${BASE_DOMAIN}
 # Specify IP address of upstream servers directly. 
