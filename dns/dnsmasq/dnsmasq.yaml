@@ -19,13 +19,13 @@ cache-size=10000
 server=1.1.1.1
 server=1.0.0.1
 # Add current server to servers list
-server=/${HOST}.${BASE_DOMAIN}/${SERVER_IP}
+#server=/${HOST}/${SERVER_IP}
 # Specify an IP address to return for any host in the given domains. /<domain>[/<domain>...]/[<ipaddr>]
 #address=/${BASE_DOMAIN}/${SERVER_IP}
 # Specifies DNS domains for the DHCP server. Domains may be be given unconditionally
-#domain=${BASE_DOMAIN}
+domain=${BASE_DOMAIN}
 # Specify IP address of upstream servers directly. 
-#local=/${BASE_DOMAIN}/
+local=/${BASE_DOMAIN}/
 #log all dns queries
 log-queries 
 # Set the facility to which dnsmasq will send syslog entries
@@ -50,4 +50,4 @@ listen-address=${SERVER_IP}
 #dhcp-host=10:08:c1:08:9d:53,LG-TV
 #dhcp-host=AA:BB:CC:DD:EE,router,10.0.0.1,infinite
 #dhcp-host=00:11:22:33:44,ps3,10.0.0.24,48h
-#dhcp-host=MAC_ADDRESS,NAME,DURATION
+#dhcp-host=MAC_ADDRESS,NAME,IP,DURATION
