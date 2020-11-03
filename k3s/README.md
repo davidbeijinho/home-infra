@@ -60,9 +60,12 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 ```
 
 ### Update raspberry 
-
+```
 sudo apt full-upgrade
+```
 
-
+### Update firmware
+```
 sudo rpi-eeprom-update
 sudo rpi-eeprom-update -a
+```
