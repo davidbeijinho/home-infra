@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroutetls
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`mydomain.com`)
+      kind: Rule
+      services:
+        - name: whoami-app
+          port: 80
+  tls: # This route uses TLS
+    certResolver: myresolver

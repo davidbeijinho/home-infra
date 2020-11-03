@@ -5,6 +5,9 @@ https://k3s.io/
   
   curl -sfL https://get.k3s.io | sh -
 
+## Install withouth Traefik
+  curl -sfL https://get.k3s.io | sh -s - --disable=traefik
+
 ## tokens location
 
     /var/lib/rancher/k3s/server/node-token
