@@ -2,3 +2,7 @@
 ```
     sudo kubectl apply -f ./crd.yaml
 ```
+
+```
+    sudo kubectl apply -f ./deployment.yaml
+```
