@@ -2,6 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: netdata-app
+  namespace: netdata-app
 spec:
   replicas: 1
   selector:
