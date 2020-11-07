@@ -1,10 +1,26 @@
-# Simple whoami app with TLS
+# Whoami
+
+# Create namespace
 ```
-    sudo kubectl apply -f ./whoami.yaml
+    kubectl apply -f namespace.yaml
 ```
 
-
-# Secure version
+# Deploy whoami
 ```
-    sudo kubectl apply -f ./whoami-secure.yaml
+    kubectl apply -f deployment.yaml
+```
+
+# Deploy whoami service
+```
+    kubectl apply -f service.yaml
+```
+
+# Whoami app insecure
+```
+    kubectl apply -f ingressRoute.yaml 
+```
+
+# Whoami app secure version
+```
+    kubectl apply -f ingressRoute-secure.yaml 
 ```
