@@ -1,0 +1,13 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami-web
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`mydomain.com`)
+      kind: Rule
+      services:
+        - name: whoami-app
+          port: 80
