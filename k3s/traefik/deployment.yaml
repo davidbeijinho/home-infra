@@ -47,6 +47,7 @@ spec:
         - name: traefik
           image: traefik:v2.2
           args:
+            - --log.level=DEBUG
             - --api.insecure
             - --accesslog
             - --entrypoints.web.Address=:80
