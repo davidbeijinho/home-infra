@@ -40,7 +40,7 @@ dhcp-range=192.168.0.50,192.168.0.150,255.255.255.0
 # The router option specifies a list of IP addresses for routers on the  client's subnet
 dhcp-option=3,${ROUTER_IP}
 # DHCP Option 6 provides a framework for passing DNS server IP addresses to hosts on a network.
-dhcp-option=6,${SERVER_IP}
+dhcp-option=6,${SERVER_IP},1.1.1.1
 # Listen on the given IP address
 listen-address=${SERVER_IP}
 #listen-address=::1,127.0.0.1,${SERVER_IP}

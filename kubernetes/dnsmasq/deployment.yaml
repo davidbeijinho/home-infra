@@ -13,6 +13,7 @@ spec:
       labels:
         app: dnsmasq-service
     spec:
+      hostNetwork: true
       containers:
         - name: dnsmasq-service
           image: anzevalher/dnsmasq:latest
@@ -20,10 +21,6 @@ spec:
             capabilities:
               add:
               - NET_ADMIN
-              - NET_RAW
-              - NET_BIND_SERVICE
-              - SETUID
-              - SETGID
           volumeMounts:
           - mountPath: /etc/dnsmasq.conf
             name: conf

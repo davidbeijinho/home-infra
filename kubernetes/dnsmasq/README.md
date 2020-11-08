@@ -9,8 +9,3 @@
 ```
     kubectl apply -f deployment.yaml
 ```
-
-# Deploy dnsmasq service
-```
-    kubectl apply -f service.yaml
-```
