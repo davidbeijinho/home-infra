@@ -59,13 +59,9 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
   cat /etc/debian_version
 ```
 
-### Update raspberry 
-```
-sudo apt full-upgrade
-```
 
-### Update firmware
-```
-sudo rpi-eeprom-update
-sudo rpi-eeprom-update -a
-```
+
+
+# k3s kubeconfig
+
+/etc/rancher/k3s/k3s.yaml
