@@ -16,7 +16,9 @@ spec:
       hostNetwork: true
       containers:
         - name: dnsmasq-service
-          image: anzevalher/dnsmasq:latest
+          # image: anzevalher/dnsmasq:latest
+          image: jackd0815/dnsmasq
+          # image: marcovolpato00/dnsmasq-webproc # has UI
           securityContext:
             capabilities:
               add:
