@@ -1,13 +1,15 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: dashboard
+  name: dashboard-secure
 spec:
   entryPoints:
-    - web
+    - websecure
   routes:
     - match: Host(`mydomain.com`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
       services:
         - name: api@internal
           kind: TraefikService
+  tls: # This route uses TLS
+    certResolver: myresolver
