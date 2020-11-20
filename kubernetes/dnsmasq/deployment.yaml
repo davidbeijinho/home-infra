@@ -2,7 +2,6 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: dnsmasq-service
-  namespace: dnsmasq-service
 spec:
   replicas: 1
   selector:
@@ -23,17 +22,17 @@ spec:
             capabilities:
               add:
               - NET_ADMIN
-          volumeMounts:
-          - mountPath: /etc/dnsmasq.conf
-            name: conf
-          - mountPath: /var/lib/misc/
-            name: misc
-      volumes:
-        - name: conf
-          hostPath:
-            path: /home/pi/INFRA_DATA/dnsmasq/dnsmasq.conf
-            type: File
-        - name: misc
-          hostPath:
-            path: /home/pi/INFRA_DATA/dnsmasq/misc
-            type: DirectoryOrCreate
+      #     volumeMounts:
+      #     - mountPath: /etc/dnsmasq.conf
+      #       name: conf
+      #     - mountPath: /var/lib/misc/
+      #       name: misc
+      # volumes:
+      #   - name: conf
+      #     hostPath:
+      #       path: /home/pi/INFRA_DATA/dnsmasq/dnsmasq.conf
+      #       type: File
+      #   - name: misc
+      #     hostPath:
+      #       path: /home/pi/INFRA_DATA/dnsmasq/misc
+      #       type: DirectoryOrCreate
