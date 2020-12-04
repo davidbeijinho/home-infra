@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: helm-dependency
     server: {{ .Values.spec.destination.server }}
-  project: default apps/
+  project: default
   source:
     path: apps/helm-dependency
     repoURL: {{ .Values.spec.source.repoURL }}
