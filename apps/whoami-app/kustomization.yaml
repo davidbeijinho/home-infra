@@ -3,7 +3,6 @@ commonLabels:
 namespace: whoami-app
 
 resources:
-- namespace.yaml
 - deployment.yaml
 - service.yaml
 - ingressRoute-secure.yaml
