@@ -11,8 +11,8 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
+    helm:
+      version: v3
     path: apps/helm-traefik
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
-    helm:
-      version: v3
