@@ -1,2 +1,3 @@
 resources:
+- manifest.yaml
 - argocd-secure.yaml
