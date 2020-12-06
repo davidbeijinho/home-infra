@@ -1,9 +1,0 @@
-commonLabels:
-  app: whoami
-namespace: whoami-app
-
-resources:
-- deployment.yaml
-- service.yaml
-- ingressRoute-secure.yaml
-- ingressRoute.yaml
