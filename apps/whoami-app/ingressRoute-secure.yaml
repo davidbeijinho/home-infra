@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`mydomain.com`)
+    - match: Host(`whoo.barcini.duckdns.org`)
       kind: Rule
       services:
         - name: whoami-app
