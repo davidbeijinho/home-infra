@@ -22,7 +22,7 @@ spec:
   entryPoints:
     - traefik
   routes:
-  - match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+  - match: Host(`dashboard.barcini.duckdns.org`) && PathPrefix(`/dashboard`) || PathPrefix(`/api`)
     kind: Rule
     services:
     - name: api@internal
