@@ -31,3 +31,6 @@ helm install \
         }" \
     traefik traefik/traefik
 ```
+
+
+ -o table --dry-run >> traefik-helm.yaml
