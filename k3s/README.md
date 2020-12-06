@@ -63,5 +63,6 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 
 
 # k3s kubeconfig
-
-/etc/rancher/k3s/k3s.yaml
+```
+  sudo cat /etc/rancher/k3s/k3s.yaml
+```
