@@ -27,7 +27,7 @@ spec:
     services:
     - name: api@internal
       kind: TraefikService
-MANIFEST:
+# MANIFEST:
 ---
 # Source: traefik/templates/rbac/serviceaccount.yaml
 kind: ServiceAccount
