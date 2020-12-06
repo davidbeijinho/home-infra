@@ -1,11 +1,11 @@
-NAME: traefik
-LAST DEPLOYED: Sun Dec  6 14:26:44 2020
-NAMESPACE: default
-STATUS: pending-install
-REVISION: 1
-TEST SUITE: None
-HOOKS:
----
+# NAME: traefik
+# LAST DEPLOYED: Sun Dec  6 14:26:44 2020
+# NAMESPACE: default
+# STATUS: pending-install
+# REVISION: 1
+# TEST SUITE: None
+# HOOKS:
+# ---
 # Source: traefik/templates/dashboard-hook-ingressroute.yaml
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
