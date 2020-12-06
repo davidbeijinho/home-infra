@@ -1,3 +1,6 @@
+commonLabels:
+namespace: argocd
+
 resources:
 - manifest.yaml
 - argocd-secure.yaml
