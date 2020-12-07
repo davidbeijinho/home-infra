@@ -3,3 +3,5 @@ kind: Kustomization
 
 resources:
 - manifest.yaml
+- dashboard.admin-user.yml
+- dashboard.admin-user-role.yml
